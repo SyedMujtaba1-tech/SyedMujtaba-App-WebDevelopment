@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment - StyleHub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">StyleHub</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="payment.html">Payment</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="payment">
+    <h2>Payment Options</h2>
+    <div class="payment-container">
+      <!-- Card Payment Form -->
+      <div class="card-payment">
+        <h3>Pay with Card</h3>
+        <form id="card-payment-form">
+          <div class="form-group">
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required>
+          </div>
+          <div class="form-group">
+            <label for="expiry-date">Expiry Date</label>
+            <input type="text" id="expiry-date" placeholder="MM/YY" required>
+          </div>
+          <div class="form-group">
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" placeholder="123" required>
+          </div>
+          <div class="form-group">
+            <label for="cardholder-name">Cardholder Name</label>
+            <input type="text" id="cardholder-name" placeholder="John Doe" required>
+          </div>
+          <button type="submit" class="btn">Pay Now</button>
+        </form>
+      </div>
+
+      <!-- PayPal Option -->
+      <div class="paypal-payment">
+        <h3>Pay with PayPal</h3>
+        <p>Click the button below to pay securely with PayPal.</p>
+        <a href="paypal.html" class="btn paypal-btn" target="_blank">
+          Pay with PayPal
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 StyleHub. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
